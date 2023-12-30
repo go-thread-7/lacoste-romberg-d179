@@ -2,9 +2,9 @@ package otel
 
 import (
 	"context"
+	"fmt"
 	"os"
 
-	logger "github.com/go-thread-7/lacoste-romberg-d179/app/middlewares/logger"
 	"go.opentelemetry.io/otel"
 	"go.opentelemetry.io/otel/attribute"
 	"go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc"
@@ -21,7 +21,7 @@ type JaegerConfig struct {
 	TracerName  string `mapstructure:"tracerName"`
 }
 
-func TracerProvider(ctx context.Context, cfg *JaegerConfig, log logger.ILogger) (trace.Tracer, error) {
+func TracerProvider(ctx context.Context, cfg *JaegerConfig) (trace.Tracer, error) {
 	exporter, err := otlptracegrpc.New(ctx, otlptracegrpc.WithInsecure())
 	if err != nil {
 		return nil, err
@@ -49,7 +49,7 @@ func TracerProvider(ctx context.Context, cfg *JaegerConfig, log logger.ILogger) 
 			select {
 			case <-ctx.Done():
 				err = tp.Shutdown(ctx)
-				log.Info("open-telemetry exited properly")
+				fmt.Println("open-telemetry exited properly")
 				if err != nil {
 					return
 				}
