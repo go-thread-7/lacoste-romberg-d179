@@ -9,8 +9,8 @@ import (
 	"time"
 
 	"github.com/ahmetb/go-linq/v3"
-	"github.com/go-thread-7/go-microservices-1/pkg/monitoring/otel"
-	logger "github.com/go-thread-7/lacoste-romberg-d1807/app/middlewares/logger"
+	logger "github.com/go-thread-7/lacoste-romberg-d179/app/middlewares/logger"
+	"github.com/go-thread-7/lacoste-romberg-d179/pkg/monitoring/otel"
 	"github.com/iancoleman/strcase"
 	jsoniter "github.com/json-iterator/go"
 	"github.com/streadway/amqp"

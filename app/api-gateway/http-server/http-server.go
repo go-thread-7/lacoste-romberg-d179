@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 
-	logger "github.com/go-thread-7/lacoste-romberg-d1845/app/middlewares/logger"
+	logger "github.com/go-thread-7/lacoste-romberg-d179/app/middlewares/logger"
 	"github.com/labstack/echo/v4"
 )
 

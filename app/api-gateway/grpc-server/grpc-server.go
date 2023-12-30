@@ -6,7 +6,7 @@ import (
 	"net"
 	"time"
 
-	"github.com/go-thread-7/lacoste-romberg-d1845/app/middlewares/logger"
+	"github.com/go-thread-7/lacoste-romberg-d179/app/middlewares/logger"
 	grpc_middleware "github.com/grpc-ecosystem/go-grpc-middleware"
 	"github.com/pkg/errors"
 	"go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc"

@@ -8,7 +8,7 @@ import (
 	"time"
 
 	"github.com/cenkalti/backoff/v4"
-	"github.com/go-thread-7/lacoste-romberg-d1807/utils/pagination"
+	"github.com/go-thread-7/lacoste-romberg-d179/utils/pagination"
 	"github.com/pkg/errors"
 	"github.com/uptrace/bun/driver/pgdriver"
 	gorm_postgres "gorm.io/driver/postgres"

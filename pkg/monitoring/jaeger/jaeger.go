@@ -4,7 +4,7 @@ import (
 	"context"
 	"os"
 
-	logger "github.com/go-thread-7/lacoste-romberg-d1807/app/middlewares/logger"
+	logger "github.com/go-thread-7/lacoste-romberg-d179/app/middlewares/logger"
 	"go.opentelemetry.io/otel"
 	"go.opentelemetry.io/otel/attribute"
 	"go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc"
